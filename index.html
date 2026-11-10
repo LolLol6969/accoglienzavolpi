@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jin Jiang Hotels — L’arte dell’ospitalità senza tempo</title>
+<meta name="description" content="Jin Jiang Hotels: una presentazione del gruppo alberghiero, dal J Hotel Shanghai Tower al Jin Jiang Hotel Shanghai.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<header id="top">
+  <a href="#top" class="logo"><i>錦江</i>Jin Jiang</a>
+  <button class="burger" id="burger" aria-expanded="false" aria-controls="nav">Menu</button>
+  <nav id="nav" aria-label="Navigazione">
+    <a href="#collezione">La Collezione</a>
+    <a href="#esperienza">Esperienza</a>
+    <a href="#galleria">Galleria</a>
+    <a href="#contatti">Contatti</a>
+  </nav>
+</header>
+
+<main>
+<div class="hero">
+  <img id="heroimg" onerror="this.style.display='none'" src="img/jin-jiang-art-deco.jpg" alt="Hotel storico in mattoni in stile art déco a Shanghai al crepuscolo">
+  <div class="hero-in">
+    <h1><span class="ln"><span>L’arte dell’ospitalità</span></span><span class="ln sub"><em>senza tempo</em></span></h1>
+    <p>Alberghi dove la cura orientale per il dettaglio incontra standard di servizio internazionali.</p>
+  </div>
+  <a href="#collezione" class="scroll" aria-label="Scorri alla collezione"><span></span></a>
+</div>
+
+<section id="collezione">
+  <div class="lead rv">
+    <h2>Tre indirizzi, tre modi di essere ospiti</h2>
+    <p>Dal grattacielo che sfiora le nuvole al palazzo che racconta un secolo di città.</p>
+  </div>
+
+  <article class="hotel">
+    <div class="pic" data-label="J Hotel Shanghai Tower"><img loading="lazy" onerror="this.style.display='none'" style="object-position:50% 25%" src="img/shanghai-tower-nuvole.jpg" alt="Lo Shanghai Tower che emerge dalle nuvole sopra lo skyline di Pudong"></div>
+    <div class="txt rv"><h3>J Hotel Shanghai Tower</h3><small>Pudong, Shanghai</small>
+      <p>Ai piani alti di una delle torri più alte del mondo: camere e suite sullo skyline di Pudong e sul fiume Huangpu.</p>
+      <button class="more" aria-expanded="false">Dettagli</button>
+      <div class="panel"><ul><li>Camere e suite con vista panoramica</li><li>Ristorazione e bar ai piani alti</li><li>Spa e area benessere</li></ul></div>
+    </div>
+  </article>
+
+  <article class="hotel">
+    <div class="pic" data-label="Jin Jiang Hotel Shanghai"><img loading="lazy" onerror="this.style.display='none'" src="img/jin-jiang-hotel-sera.jpg" alt="Facciata del Jin Jiang Hotel illuminata al crepuscolo"></div>
+    <div class="txt rv"><h3>Jin Jiang Hotel Shanghai</h3><small>Centro di Shanghai</small>
+      <p>Un indirizzo storico: sale di rappresentanza e giardini raccontano la Shanghai del Novecento con il comfort di oggi.</p>
+      <button class="more" aria-expanded="false">Dettagli</button>
+      <div class="panel"><ul><li>Architettura e interni storici</li><li>Sale per eventi e ricevimenti</li><li>Cucina cinese e internazionale</li></ul></div>
+    </div>
+  </article>
+
+  <article class="hotel">
+    <div class="pic" data-label="Jin Jiang International"><img loading="lazy" onerror="this.style.display='none'" style="object-position:50% 35%" src="img/jin-jiang-international-taicang.jpg" alt="Jin Jiang International Hotel di Taicang illuminato di notte"></div>
+    <div class="txt rv"><h3>Jin Jiang International</h3><small>Asia ed Europa</small>
+      <p>Il portafoglio internazionale riunisce marchi per viaggi d’affari e di piacere in molte città.</p>
+      <button class="more" aria-expanded="false">Dettagli</button>
+      <div class="panel"><ul><li>Marchi per fasce e stili diversi</li><li>Presenza in Asia e in Europa</li><li>Soggiorni di lavoro e di svago</li></ul></div>
+    </div>
+  </article>
+</section>
+
+<section class="story" id="esperienza">
+  <div class="big" id="big" aria-hidden="true">錦江</div>
+  <div class="cols">
+    <h2 class="rv">Oriente e Occidente, nella stessa stanza</h2>
+    <div class="rv">
+      <p>Jin Jiang nasce a Shanghai, crocevia di culture, con una idea precisa di accoglienza: attenzione prima della richiesta.</p>
+      <p>Il tè all’arrivo, la cucina regionale cinese accanto ai piatti internazionali, un personale che conosce la città e sa raccontarla. Intanto procedure, comfort e sicurezza rispondono agli standard che i viaggiatori si aspettano ovunque.</p>
+      <button class="tell" id="chatbtn" aria-expanded="false" aria-controls="chat">Ascolta la nostra storia</button>
+    </div>
+  </div>
+</section>
+
+<section id="galleria">
+  <div class="lead rv"><h2>Camere, tavole, silenzi</h2><p>Tocca una foto per ingrandirla.</p></div>
+  <div class="gal">
+    <figure class="g1"><button type="button" class="open" aria-label="Ingrandisci: Camere"><img loading="lazy" onerror="this.style.display='none'" src="img/camera-vista-citta.jpg" alt="Camera con grande finestra sullo skyline notturno di Shanghai"></button><figcaption>Camere</figcaption></figure>
+    <figure class="g2"><button type="button" class="open" aria-label="Ingrandisci: Ristorazione"><img loading="lazy" onerror="this.style.display='none'" src="img/ristorante.jpg" alt="Sala del ristorante con fiori di ciliegio e lanterne rosse"></button><figcaption>Ristorazione</figcaption></figure>
+    <figure class="g3"><button type="button" class="open" aria-label="Ingrandisci: Spa"><img loading="lazy" onerror="this.style.display='none'" src="img/spa-vasche.jpg" alt="Vasche termali della spa con soffitto luminoso"></button><figcaption>Spa</figcaption></figure>
+    <figure class="g4"><button type="button" class="open" aria-label="Ingrandisci: Bagni"><img loading="lazy" onerror="this.style.display='none'" src="img/bagno.jpg" alt="Bagno in marmo chiaro con doccia a vetro e vasca"></button><figcaption>Bagni</figcaption></figure>
+    <figure class="g5"><button type="button" class="open" aria-label="Ingrandisci: Piscina"><img loading="lazy" onerror="this.style.display='none'" src="img/resort-piscina.jpg" alt="Piscina illuminata al crepuscolo con lettini e camere affacciate"></button><figcaption>Piscina</figcaption></figure>
+    <figure class="g6"><button type="button" class="open" aria-label="Ingrandisci: Architettura"><img loading="lazy" onerror="this.style.display='none'" src="img/jin-jiang-art-deco.jpg" alt="Edificio storico in mattoni in stile art déco illuminato al crepuscolo"></button><figcaption>Architettura</figcaption></figure>
+  </div>
+</section>
+</main>
+
+<footer id="contatti">
+  <div class="foot">
+    <div><a href="#top" class="logo"><i>錦江</i>Jin Jiang</a><p style="margin-top:.6rem;max-width:18rem">Ospitalità di lusso tra tradizione orientale e standard internazionali.</p></div>
+    <div><a href="mailto:info@example.com">info@example.com</a><br>+86 21 0000 0000<br>Shanghai, Cina</div>
+  </div>
+  <div class="small">© 2026 Jin Jiang Hotels. Pagina di presentazione.</div>
+</footer>
+
+<section class="chat" id="chat" role="dialog" aria-label="Racconto della storia dell’hotel" hidden>
+  <div class="chat-h"><div><strong>Il concierge</strong><span>Racconta la storia di Jin Jiang</span></div><button id="chatx" aria-label="Chiudi la chat">Chiudi</button></div>
+  <div class="chat-log" id="chatlog" aria-live="polite"></div>
+  <div class="chat-opts" id="chatopts"></div>
+</section>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Galleria ingrandita" hidden>
+  <button class="lb-x" id="lbx" aria-label="Chiudi">Chiudi</button>
+  <button class="lb-n prev" id="lbp" aria-label="Foto precedente">&#8249;</button>
+  <figure><img id="lbimg" alt=""><figcaption id="lbcap"></figcaption></figure>
+  <button class="lb-n next" id="lbn" aria-label="Foto successiva">&#8250;</button>
+</div>
+
+<script src="copione.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
