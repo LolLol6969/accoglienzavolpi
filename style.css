@@ -65,9 +65,10 @@ main{flex:1;display:flex;flex-direction:column;min-height:0;padding-top:var(--hh
 .more::after{content:"+";transition:transform .4s var(--ease)}
 .more[aria-expanded="true"]::after{transform:rotate(45deg)}
 .panel{display:grid;grid-template-rows:0fr;transition:grid-template-rows .5s var(--ease)}
-.panel ul{overflow:hidden;list-style:none;font-size:.88rem;color:var(--sand)}
-.panel li{padding:.3rem 0;border-bottom:1px solid rgba(255,255,255,.2)}
-.panel li:first-child{margin-top:.9rem;border-top:1px solid rgba(255,255,255,.2)}
+.panel>div{overflow:hidden;min-height:0}
+.panel p{max-width:none;margin-top:.9rem;padding-top:.9rem;border-top:1px solid rgba(255,255,255,.25);font-size:.86rem;line-height:1.6;color:var(--sand);max-height:36svh;overflow-y:auto;padding-right:.3rem}
+.panel a{border-bottom:1px solid var(--gold);transition:color .3s}
+.panel a:hover{color:var(--gold)}
 .more[aria-expanded="true"]+.panel{grid-template-rows:1fr}
 
 /* pagine divise (esperienza, contatti) */
