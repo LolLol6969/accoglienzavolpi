@@ -39,6 +39,11 @@
     });
   });
 
+  document.addEventListener('click', function (e) {
+    if (e.target.closest && e.target.closest('.act')) return;
+    more.forEach(function (o) { o.setAttribute('aria-expanded', 'false'); o.textContent = 'Dettagli'; });
+  });
+
   /* lightbox (solo galleria) */
   if (lb) {
     var figs = $$('.gal figure'), img = $('#lbimg'), cap = $('#lbcap'), cur = 0, lastFocus = null;

@@ -61,15 +61,15 @@ main{flex:1;display:flex;flex-direction:column;min-height:0;padding-top:var(--hh
 .card h2{font-size:clamp(1.8rem,2.6vw,2.4rem)}
 .card small{display:block;color:var(--sand);margin:.2rem 0 .8rem}
 .card p{max-width:24rem;font-size:.92rem;color:#e8e2d8}
-.more{margin-top:1.1rem;background:none;border:0;border-bottom:1px solid var(--gold);padding:0 0 .15rem;font-size:.92rem;display:inline-flex;gap:.6rem;align-items:center}
+.act{position:relative;margin-top:1.1rem}
+.more{background:none;border:0;border-bottom:1px solid var(--gold);padding:0 0 .15rem;font-size:.92rem;display:inline-flex;gap:.6rem;align-items:center}
 .more::after{content:"+";transition:transform .4s var(--ease)}
 .more[aria-expanded="true"]::after{transform:rotate(45deg)}
-.panel{display:grid;grid-template-rows:0fr;transition:grid-template-rows .5s var(--ease)}
-.panel>div{overflow:hidden;min-height:0}
-.panel p{max-width:none;margin-top:.9rem;padding-top:.9rem;border-top:1px solid rgba(255,255,255,.25);font-size:.86rem;line-height:1.6;color:var(--sand);max-height:36svh;overflow-y:auto;padding-right:.3rem}
+.panel{position:absolute;left:-1.6rem;right:-1.6rem;bottom:calc(100% + .9rem);max-height:min(62svh,28rem);overflow-y:auto;padding:1.2rem 1.6rem;background:rgba(26,26,26,.94);opacity:0;visibility:hidden;transform:translateY(14px);transition:opacity .5s ease,transform .7s var(--ease),visibility 0s .7s}
+.panel p{margin:0;max-width:none;font-size:.86rem;line-height:1.6;color:var(--sand)}
 .panel a{border-bottom:1px solid var(--gold);transition:color .3s}
 .panel a:hover{color:var(--gold)}
-.more[aria-expanded="true"]+.panel{grid-template-rows:1fr}
+.more[aria-expanded="true"]+.panel{opacity:1;visibility:visible;transform:none;transition:opacity .5s ease,transform .7s var(--ease),visibility 0s}
 
 /* pagine divise (esperienza, contatti) */
 .split{display:grid;grid-template-columns:1fr 1fr;flex:1;min-height:0}
