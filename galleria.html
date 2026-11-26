@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Galleria — Jin Jiang Hotels</title>
+<meta name="description" content="Camere, ristorazione, spa e architettura: una galleria dei luoghi Jin Jiang.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="fit">
+<header>
+  <a href="index.html" class="logo">Jin Jiang</a>
+  <button class="burger" id="burger" aria-expanded="false" aria-controls="nav">Menu</button>
+  <nav id="nav" aria-label="Navigazione">
+    <a href="index.html">Home</a>
+    <a href="collezione.html">La Collezione</a>
+    <a href="esperienza.html">Esperienza</a>
+    <a href="galleria.html" aria-current="page">Galleria</a>
+    <a href="contatti.html">Contatti</a>
+  </nav>
+</header>
+
+<main>
+  <div class="pagehead"><h1>Camere, tavole, silenzi</h1><p>Tocca una foto per ingrandirla.</p></div>
+  <div class="gal">
+    <figure class="g1"><button type="button" class="open" aria-label="Ingrandisci: Camere"><img loading="lazy" onerror="this.style.display='none'" src="img/camera-vista-citta.jpg" alt="Camera con grande finestra sullo skyline notturno di Shanghai"></button><figcaption>Camere</figcaption></figure>
+    <figure class="g2"><button type="button" class="open" aria-label="Ingrandisci: Ristorazione"><img loading="lazy" onerror="this.style.display='none'" src="img/ristorante.jpg" alt="Sala del ristorante con fiori di ciliegio e lanterne rosse"></button><figcaption>Ristorazione</figcaption></figure>
+    <figure class="g3"><button type="button" class="open" aria-label="Ingrandisci: Spa"><img loading="lazy" onerror="this.style.display='none'" src="img/spa-vasche.jpg" alt="Vasche termali della spa con soffitto luminoso"></button><figcaption>Spa</figcaption></figure>
+    <figure class="g4"><button type="button" class="open" aria-label="Ingrandisci: Bagni"><img loading="lazy" onerror="this.style.display='none'" src="img/bagno.jpg" alt="Bagno in marmo chiaro con doccia a vetro e vasca"></button><figcaption>Bagni</figcaption></figure>
+    <figure class="g5"><button type="button" class="open" aria-label="Ingrandisci: Piscina"><img loading="lazy" onerror="this.style.display='none'" src="img/resort-piscina.jpg" alt="Piscina illuminata al crepuscolo con lettini e camere affacciate"></button><figcaption>Piscina</figcaption></figure>
+    <figure class="g6"><button type="button" class="open" aria-label="Ingrandisci: Architettura"><img loading="lazy" onerror="this.style.display='none'" src="img/jin-jiang-art-deco.jpg" alt="Edificio storico in mattoni in stile art déco illuminato al crepuscolo"></button><figcaption>Architettura</figcaption></figure>
+  </div>
+</main>
+<footer class="mini"><span>© 2026 Jin Jiang Hotels</span><span>Pagina di presentazione</span></footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Galleria ingrandita" hidden>
+  <button class="lb-x" id="lbx" aria-label="Chiudi">Chiudi</button>
+  <button class="lb-n prev" id="lbp" aria-label="Foto precedente">&#8249;</button>
+  <figure><img id="lbimg" alt=""><figcaption id="lbcap"></figcaption></figure>
+  <button class="lb-n next" id="lbn" aria-label="Foto successiva">&#8250;</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

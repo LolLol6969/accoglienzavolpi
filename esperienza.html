@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Esperienza — Jin Jiang Hotels</title>
+<meta name="description" content="Oriente e Occidente nella stessa stanza: la storia e lo spirito di accoglienza di Jin Jiang.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="dark">
+<header>
+  <a href="index.html" class="logo">Jin Jiang</a>
+  <button class="burger" id="burger" aria-expanded="false" aria-controls="nav">Menu</button>
+  <nav id="nav" aria-label="Navigazione">
+    <a href="index.html">Home</a>
+    <a href="collezione.html">La Collezione</a>
+    <a href="esperienza.html" aria-current="page">Esperienza</a>
+    <a href="galleria.html">Galleria</a>
+    <a href="contatti.html">Contatti</a>
+  </nav>
+</header>
+
+<main class="split">
+  <div class="copy">
+    <div class="big" aria-hidden="true">錦江</div>
+    <h1>Oriente e Occidente, nella stessa stanza</h1>
+    <p class="lead-p">Jin Jiang nasce a Shanghai, crocevia di culture, con una idea precisa di accoglienza: attenzione prima della richiesta.</p>
+    <p>Il tè all’arrivo, la cucina regionale cinese accanto ai piatti internazionali, un personale che conosce la città e sa raccontarla. Intanto procedure, comfort e sicurezza rispondono agli standard che i viaggiatori si aspettano ovunque.</p>
+    <button class="tell" id="chatbtn" aria-expanded="false" aria-controls="chat">Ascolta la nostra storia</button>
+  </div>
+  <div class="side"><img onerror="this.style.display='none'" src="img/shanghai-tower-nuvole.jpg" alt="Lo Shanghai Tower che emerge dalle nuvole sopra lo skyline di Pudong"></div>
+</main>
+<footer class="mini"><span>© 2026 Jin Jiang Hotels</span><span>Pagina di presentazione</span></footer>
+
+<section class="chat" id="chat" role="dialog" aria-label="Racconto della storia dell’hotel" hidden>
+  <div class="chat-h"><div><strong>Il concierge</strong><span>Racconta la storia di Jin Jiang</span></div><button id="chatx" aria-label="Chiudi la chat">Chiudi</button></div>
+  <div class="chat-log" id="chatlog" aria-live="polite"></div>
+  <div class="chat-opts" id="chatopts"></div>
+</section>
+
+<script src="copione.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
